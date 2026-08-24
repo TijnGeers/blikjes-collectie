@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blikjes Collectie</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <link rel="apple-touch-icon" href="icon.png" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -409,6 +412,11 @@
       if (file) scanBlikje(file);
       e.target.value = '';
     });
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
   </script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "Blikjes Collectie",
+  "short_name": "Blikjes",
+  "description": "Verzamel alle blikjes en voltooi je collectie.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#1a1a2e",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}
